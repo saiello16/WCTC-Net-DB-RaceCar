@@ -19,7 +19,7 @@ namespace RaceTrack.RaceTrack.Drivers
             Car = car;
         }
 
-        public virtual void Accelerate()
+        public virtual void Accelerate(int skillLevel)
         {
             Car.Accelerate(SkillLevel);
         }
@@ -31,8 +31,7 @@ namespace RaceTrack.RaceTrack.Drivers
         {
             Car.Brake();
         }
-
         public abstract void Drive();
-
+        
     }
 }
