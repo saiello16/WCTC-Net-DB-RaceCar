@@ -51,7 +51,7 @@ namespace RaceTrack.RaceTrack
         {
             foreach (var driver in Drivers)
             {
-                driver.Accelerate();
+                driver.Accelerate(driver.SkillLevel);
             }
             Thread.Sleep(1000);
         }
